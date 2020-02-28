@@ -1,6 +1,12 @@
 $primary-color: #2d377f;
 $secondary-color: #747bb2;
 $table-border: 2px solid $primary-color;
+%container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
 html,
 body {
@@ -10,11 +16,8 @@ body {
 }
 
 .mycontainer {
+  @extend %container;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 }
 
 header {
